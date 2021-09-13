@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkani ECommerce Store </title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- google Montserrat  font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+ 
+  <!-- header section  -->
+  <header>
+
+    <div class="Search-field" style="overflow: hidden;margin-bottom: 54px;">
+      <marquee width="100%" direction="left" height="50px" style="
+      font-size: 35px;
+      font-size: 24px;
+      color: #000;
+      background-image: linear-gradient(
+        45deg, #fbd1d1, white);"
+      >
+        হাককানী স্টোরে আপনাকে স্বাগতম,এখানে কম দামে আপনার পছন্দের শার্ট,প্যান্ট,জুয়েলার্স,গহনা সব আপনার হাতের নাগালে , আসুন ,দেখুন আর কিনে ফেলুন .মোবা ঃ ০১৭৫০৩৬৮৯৭৫
+        </marquee>
+      <div class="search-box">
+        <div class="row">
+          <div class="col-md-8">
+             <input id="input-field" class="search-field " placeholder ="search the product " type="text" style="
+              margin-left: 30px;
+              margin-top: 6px;
+              font-size: 14px;
+              letter-spacing: 1px;
+             " />
+          </div>
+          <div class="col-md-4">
+
+            <button type="button" class="btn btn-info search-button" data-toggle="button"  aria-pressed="false"
+              autocomplete="off" id="search-btn" onclick="loadProducts()">
+              Search
+            </button>
+          </div>
+        </div>
+    </div>
+    </div>
+  </header>
+ 
+
+<!-- main area section  -->
+  <main class="main">
+
+    <div class="row">
+      <div class="col-md-9 col-lg-9 col-sm-7 " >
+        <div id="all-products" class="cart-style">
+        </div>
+      </div>
+
+  <!-- Calculate The Total Cart Section  -->
+
+      <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
+        <div class="cart" id="my-cart">
+          <table class="table">
+            <thead>
+              <h1>My-Cart</h1>
+              <!-- <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr> -->
+            </thead>
+            <tbody>
+              <tr>
+                <th>Total Added-Products:</th>
+                 <td> <span id="total-Products">0</span></td>  <!--bug fixing this line -->
+                <!-- <td></td>
+                <td></td> -->
+              </tr>
+              <tr>
+                <th>Price:</th>
+                <td>$ <span id="price">0</span></td>
+                <!-- <td></td>
+                <td></td> -->
+              </tr>
+              <tr>
+                <th>Delivery-Charge:</th>
+                <td>$ <span id="delivery-charge">20</span></td>
+                <!-- <td></td>
+                <td></td> -->
+              </tr>
+              <tr>
+                <th>Total-Tax:</th>
+                <td>$ <span id="total-tax">0</span></td>
+                <!-- <td></td>
+                <td></td> -->
+              </tr>
+              <tr>
+                <th scope="row">Total</th>
+                <td colspan="2">$ <span id="total">0</span></td>
+                <!-- <td></td> -->
+              </tr>
+            </tbody>
+          </table>
+          <div class="parces text-center">
+            <button class="btn btn-primary text-center">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer section  -->
+  <footer class="footer text-center">
+     <div class="social-icon">
+       <ul>
+         <li><i class="fab fa-facebook" style="background-color:#268CED;color: white;"></i></li>
+         <li><i class="fab fa-twitter" style="background-color:#68B3D6 ;"></i></li>
+         <li><i class="fab fa-youtube" style="background-color:red;"></i></li>
+         <li><i class="fab fa-viber" style="background-color:#784E9C;"></i></li>
+         <li><i class="fab fa-google-plus" style="background-color:red;"></i></li>
+       </ul>
+     </div>
+     <div class="text-center">
+       <img src="images/nav.png" alt="">
+     </div>
+     <h5 style="color: #fff;"> All Right Reserved @copy <span style="color: turquoise;">Mim Hakkani</span> </h5>
+  </footer>
+
+  <!-- add javascript  file  -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
